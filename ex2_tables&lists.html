@@ -6,21 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image-x/icon" href="">
     <title>Ecom Fullstack Course</title>
-    <style> 
-        table, th, td {
+    <style>
+        h1, h3 {
+            text-align: center;
+        }
+        div.theList {
+            text-align: center;
+        }
+
+        ul.companiess {
+            display: inline-block;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
             border: solid orangered;
-           text-align: center; 
-           border-collapse: collapse;
-    }
-    caption {
-        text-decoration: wavy;
-        font-weight: bold;
-        font-size: 25px;
-    }
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        caption {
+            text-decoration: wavy;
+            font-weight: bold;
+            font-size: 25px;
+        }
     </style>
 </head>
 
 <body>
+    <center>
     <nav id="top">
         <h1>Unsplash Site</h1>
     </nav>
@@ -29,13 +45,14 @@
         src="https://images.unsplash.com/photo-1565755370302-e30ef892495d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
     <br><br>
     <h3>Familiar Companies</h3>
-    <ul>
+    <div class="theList">
+    <ul class="companiess">
         <li>Partner</li>
         <li>Cellcom</li>
         <li>Hot</li>
         <li>019 Mobile</li>
     </ul>
-
+    </div>
     <table border="1" style="text-align: center; padding: 5px;">
         <th>First Name</th>
         <th>Last Name</th>
@@ -61,5 +78,7 @@
         </tr>
 
     </table>
-<a href="#top">Go to the beginning of the page</a>
+    <a href="#top">Go to the beginning of the page</a>
+</center>
+</body>
 </html>
