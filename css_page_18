@@ -1,0 +1,46 @@
+DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {  
+                margin: 200px 200px 200px 200px;
+                border: 5px dashed;
+                border-top-color: tomato;
+                border-right-color: green;
+                border-bottom-color: blue;
+                border-left-color: indigo;
+                border-radius: 15px;
+                padding: 0px;
+                
+                
+            }
+            
+            h1 {  
+                background-color: lightblue;
+                margin: 0px;
+            }
+            
+            p {  
+                background-color: tomato;
+                color: yellow;
+                margin: 0px;
+            }
+            
+            h1:hover {  
+                background-color: yellow;
+            }
+           
+           {  }
+       </style>
+   </head> 
+    <body>
+        <div>
+            <h1>Use class</h1>
+            <p>
+                Wikipedia is a free online encyclopedia featuring openly editable content created and sourced by users from around the world.  
+                Wikipedia is a free online encyclopedia featuring openly editable content created and sourced by users from around the world. 
+                Wikipedia is a free online encyclopedia featuring openly editable content created and sourced by users from around the world.  
+            </p>
+        </div>
+    </body>
+</html>
