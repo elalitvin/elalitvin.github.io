@@ -22,7 +22,7 @@ h1 {
 p {
     background-color: tomato;
     color: yellow;
-    margin: 0px;
+    margin: 0%;
     row-gap: 0px;
 }
  h1:hover {
