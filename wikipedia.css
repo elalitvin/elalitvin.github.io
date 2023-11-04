@@ -11,7 +11,7 @@ div {
     border-spacing: 0px;
     padding: 0%;
     row-gap: 0px;
-    align: center;
+    justify-conetent: center;
 }
 
 h1 {
