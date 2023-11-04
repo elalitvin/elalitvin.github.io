@@ -17,6 +17,7 @@ h1 {
     background-color: lightblue;
     margin: 0%;
     row-gap: 0px;
+    color: orange;
 }
 
 p {
@@ -24,7 +25,9 @@ p {
     color: yellow;
     margin: 0%;
     row-gap: 0px;
+    padding: 0px;
 }
  h1:hover {
     background-color: yellow;
+     color: black;
  }
