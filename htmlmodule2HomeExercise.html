@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLMODULE2 Home Exercise</title>
+    <style>
+        #multiplication {
+            border: 1px solid;
+            width: 35%;
+            text-align: center;
+        }
+       .multiplica {
+        background-color: yellow;
+       }
+    .multiplica, .multiplic, .mult {
+        border: 1px solid;
+    }
+    .multiplic {
+        background-color: lightblue;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red">Exercise 1 - Add to the form a drop-down list with 3 cities of your choice:</h1>
+    <pre style="color:red">&lt;h1&gt; Choose a city &lt;/h1&gt;
+    &lt;form&gt;&lt;/form&gt;
+   </pre>
+
+    <br>
+    <pre>&lt;h1&gt; Choose a city &lt;/h1&gt;
+    &lt;form&gt;
+    &lt;select&gt;
+        &lt;option value="ChooseAcity"&gt;&lt;/option&gt;
+        &lt;option value="NewYork"&gt;New York"&lt;/option&gt;
+        &lt;option value="Jerusalem"&gt;Jerusalem"&lt;/option&gt;
+        &lt;option value="Barcelona"&gt;Barcelona"&lt;/option&gt
+    &lt;/select&gt;
+    &lt;/form&gt;
+   </pre>
+
+    <br>
+    <ht>choose a city</ht>
+    <form>
+        <select>
+            <option value="ChooseAcity"></option>
+            <option value="NewYork">New York</option>
+            <option value="Jerusalem">Jerusalem</option>
+            <option value="Barcelona">Barcelona</option>
+        </select>
+    </form>
+    <br><br>
+
+    <h1 style="color: red">Exercise 2 - Create a new form with 3 inputs:</h1>
+    <pre style="color: red">
+    - The first should be required and not exceed 10 characters.
+    - In the second input, you should insert a password and the password should be like in the image below.
+    - In the last input you should insert your email and the field is required.</pre>
+    <h1>My form</h1>
+    <form action="#">
+        <label for="name">My Name</label>
+        <input type="text" id="name"><br>
+        <label for="PersonalPassword">My password</label>
+        <input type="password" id="PersonalPassword"><br>
+        <label for="PersonalEmail">My e-mail</label>
+        <input type="email" id="PersonalEmail"><br>
+        <input type="submit" value="Send">
+    </form>
+    <br><br>
+
+    <h1 style="color: red">Exercise 3 - Create a receipt:</h1>
+    <pre style="color:red">
+    Create a receipt, you can create any receipt that you want, but it should look like the
+    example below.
+    In your answer don’t use explicit numbers but use the relevant HTML element that will add it.
+</pre>
+
+    <h2>Easy Breakfast Tortilla Pizza</h2>
+    <p>This hearty breakfast tortilla pizza could not be easier! Think breakfast burrito with a toasty outside. It's
+        perfect for feeding kids and they can customize their own breakfast pizza as they like.</p>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>1/2 tablespoon butter, softened</li>
+        <li>1 (10-inch) tortilla</li>
+        <li>3 large eggs</li>
+        <li>1/4 teaspoon salt</li>
+        <li>1/4 teaspoon freshly ground black pepper</li>
+        <li>1/2 cup total assorted toppings, such as cheese, hot sauce, cooked meat or veggies</li>
+    </ul>
+    <h3>Directions</h3>
+    <ol>
+        <li>Preheat the oven to 350 degrees F (175 degrees C). </li>
+        <li>Rub butter along the bottom and sides of a 8 or 9 inch cake pan. Press tortilla down into the buttered pan
+            and against the sides. Crack each egg next to each other on the tortilla. Sprinkle with salt and pepper and
+            add desired toppings evenly on top.</li>
+        <li>Bake in the preheated oven until egg whites are set and tortilla has become lightly browned and toasted
+            along the edges and bottom, 13 to 15 minutes.</li>
+    </ol>
+    <br><br>
+    <h1 style="color: red">Exercise 4 - Create a form:</h1>
+    <pre style="color: red">
+    Create a form like in the example below.
+    Notice that the first name is already with the cursor ready to write
+</pre>
+    <h1>Lets go somewhere</h1>
+    <form id="LetsGoSomewhere">
+        <label for="FirstName">First name</label>
+        <input type="text" id="FirstName" autofocus><br>
+        <label for="FamilyName">Family name</label>
+        <input type="text" id="FamilyName" placeholder="Put your family name here"><br>
+        <p>Gender:
+            <label for="YourGender">Male</label>
+            <input type="radio" id="YourGender" name="Gend">
+            <label for="YourGender">Female</label>
+            <input type="radio" id="YourGender" name="Gend">
+        </p>
+        <p>Choose a city:
+            <select>
+                <option value="TelAviv">Tel Aviv</option>
+                <option value="Haifa">Haifa</option>
+                <option value="Ashkelon">Ashkelon</option>
+            </select>
+        </p>
+        <p>Date to travel:
+            <label for="FromD">From:</label>
+            <input type="date" id="FromD">
+            <label for="ToD">To:</label>
+            <input type="date" id="ToD">
+        </p>
+        <p>Give me deals for:<br>
+            <input type="checkbox" id="kiev">
+            <label for="kiev">Kiev</label><br>
+            <input type="checkbox" id="amsterdam">
+            <label for="amsterdam">Amsterdam</label><br>
+            <input type="checkbox" id="rome">
+            <label for="rome">Rome</label><br>
+            <input type="checkbox" id="london">
+            <label for="london">London</label>
+        </p>
+        <input type="submit" value="Send">
+    </form><br><br>
+    <h1 style="color: red">Exercise 5</h1>
+    <h1>Ecom Academy</h1>
+    <h3>Address</h3>
+    <p>XX Ramat Gan</p>
+    <h3>Phone</h3>
+    <p>054-9998888</p>
+    <h3>Internet Cite</h3>
+    <a href="https://www.ecomschool.co.il/">https://www.ecomschool.co.il/</a>
+    <h3>Hours</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>-</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Closed</td>
+                <td>13:30-17:30</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+            <td>8:30-12:15</td>
+            <td>13:30-17:30</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+            <td>8:30-12:15</td>
+            <td>13:30-17:30</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+            <td>8:30-12:15</td>
+            <td>13:30-17:30</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+            <td>8:30-12:15</td>
+            <td>13:30-17:30</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+            <td>9:00-12:00</td>
+            <td>Closed</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+            <td>Closed</td>
+            <td>Closed</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <h1 style="color: red">Exercise 6</h1>
+    <!--Im sorry, Ididnt understand the instructions for this exercise. I think I miss the point-->
+    <h3>Fortnite</h3>
+    <p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct
+        game mode versions that otherwise share the same general gameplay and game engine: Fortnite Battle Royale, a
+        free-to-play battle royale game in which up to 100 players fight to be the last person standing; Fortnite: Save
+        the World, a cooperative hybrid tower defense-shooter and survival game in which up to four players fight off
+        zombie-like creatures and defend objects with traps and fortifications they can build;</p>
+    <h4>Charachters</h4>
+    <table id="fortnite">
+        <thead>
+            <tr>
+                <th>Picture</th>
+                <th>Name</th>
+                <th>Date of birth</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://i.redd.it/s2jcig557u381.jpg" height="30px"></td>
+                <td><b>Emy</b></td>
+                <td>2000</td>
+                <td><button id="modifyEmy" style="margin:2px;">Modify</button><button id="deleteEmy"style="margin:2px;">Delete</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://th.bing.com/th/id/OIP.VUeFsBYIWv37oFIZQChEhgHaHa?pid=ImgDet&rs=1" height="30px"></td>
+                <td><b>Ray</b></td>
+                <td>2001</td>
+                <td><button id="modifyRay" style="margin:2px;">Modify</button><button id="deleteRay"style="margin:2px;">Delete</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://th.bing.com/th/id/R.bce4ced153357d86a7c62c7ed2707482?rik=UTAMUIP4xNhymg&pid=ImgRaw&r=0" height="30px"></td>
+                <td><b>Ramires</b></td>
+                <td>2003</td>
+                <td><button id="modifyRamires" style="margin:2px;">Modify</button><button id="deleteRamires"style="margin:2px;">Delete</button></td>
+            </tr>
+        </tbody>
+    </table><br><br>
+    <h1 style="color: red">Exercise 7 - Build table of multiplication:</h1> 
+    <table id="multiplication">
+        <tr>
+            <th class="multiplica">x</th>
+            <th class="multiplic">1</th>
+            <th class="multiplic">2</th>
+            <th class="multiplic">3</th>
+            <th class="multiplic">4</th>
+            <th class="multiplic">5</th>
+            <th class="multiplic">6</th>
+            <th class="multiplic">7</th>
+            <th class="multiplic">8</th>
+            <th class="multiplic">9</th>
+            <th class="multiplic">10</th>
+        </tr>
+        <tr>
+            <th class="multiplic">1</th>
+            <td class="mult">1</td>
+            <td class="mult">2</td>
+            <td class="mult">3</td>
+            <td class="mult">4</td>
+            <td class="mult">5</td>
+            <td class="mult">6</td>
+            <td class="mult">7</td>
+            <td class="mult">8</td>
+            <td class="mult">9</td>
+            <td class="mult">10</td>
+        </tr>
+        <tr>
+            <th class="multiplic">2</th>
+            <td class="mult">2</td>
+            <td class="mult">4</td>
+            <td class="mult">6</td>
+            <td class="mult">8</td>
+            <td class="mult">10</td>
+            <td class="mult">12</td>
+            <td class="mult">14</td>
+            <td class="mult">16</td>
+            <td class="mult">18</td>
+            <td class="mult">20</td>
+        </tr>
+        <tr>
+            <th class="multiplic">3</th>
+            <td class="mult">3</td>
+            <td class="mult">6</td>
+            <td class="mult">9</td>
+            <td class="mult">12</td>
+            <td class="mult">15</td>
+            <td class="mult">18</td>
+            <td class="mult">21</td>
+            <td class="mult">24</td>
+            <td class="mult">27</td>
+            <td class="mult">30</td>
+        </tr>
+        <tr>
+            <th class="multiplic">4</th>
+            <td class="mult">4</td>
+            <td class="mult">8</td>
+            <td class="mult">12</td>
+            <td class="mult">16</td>
+            <td class="mult">20</td>
+            <td class="mult">24</td>
+            <td class="mult">28</td>
+            <td class="mult">32</td>
+            <td class="mult">36</td>
+            <td class="mult">40</td>
+        </tr>
+        <tr>
+            <th class="multiplic">5</th>
+            <td class="mult">5</td>
+            <td class="mult">10</td>
+            <td class="mult">15</td>
+            <td class="mult">20</td>
+            <td class="mult">25</td>
+            <td class="mult">30</td>
+            <td class="mult">35</td>
+            <td class="mult">40</td>
+            <td class="mult">45</td>
+            <td class="mult">50</td>
+        </tr>
+        <tr>
+            <th class="multiplic">6</th>
+            <td class="mult">6</td>
+            <td class="mult">12</td>
+            <td class="mult">18</td>
+            <td class="mult">24</td>
+            <td class="mult">30</td>
+            <td class="mult">36</td>
+            <td class="mult">42</td>
+            <td class="mult">48</td>
+            <td class="mult">54</td>
+            <td class="mult">60</td>
+        </tr>
+        <tr>
+            <th class="multiplic">7</th>
+            <td class="mult">7</td>
+            <td class="mult">14</td>
+            <td class="mult">21</td>
+            <td class="mult">28</td>
+            <td class="mult">35</td>
+            <td class="mult">42</td>
+            <td class="mult">49</td>
+            <td class="mult">56</td>
+            <td class="mult">63</td>
+            <td class="mult">70</td>
+        </tr>
+        <tr>
+            <th class="multiplic">8</th>
+            <td class="mult">8</td>
+            <td class="mult">16</td>
+            <td class="mult">24</td>
+            <td class="mult">32</td>
+            <td class="mult">40</td>
+            <td class="mult">48</td>
+            <td class="mult">56</td>
+            <td class="mult">64</td>
+            <td class="mult">72</td>
+            <td class="mult">80</td>
+        </tr>
+        <tr>
+            <th class="multiplic">9</th>
+            <td class="mult">9</td>
+            <td class="mult">18</td>
+            <td class="mult">27</td>
+            <td class="mult">36</td>
+            <td class="mult">45</td>
+            <td class="mult">54</td>
+            <td class="mult">63</td>
+            <td class="mult">72</td>
+            <td class="mult">81</td>
+            <td class="mult">90</td>
+        </tr>
+        <tr>
+            <th class="multiplic">10</th>
+            <td class="mult">10</td>
+            <td class="mult">20</td>
+            <td class="mult">30</td>
+            <td class="mult">40</td>
+            <td class="mult">50</td>
+            <td class="mult">60</td>
+            <td class="mult">70</td>
+            <td class="mult">80</td>
+            <td class="mult">90</td>
+            <td class="mult">100</td>
+        </tr>
+    </table>
+</body>
+
+</html>
