@@ -1,0 +1,15 @@
+.HomeWork {
+    color: red;
+}
+
+#FirstEx {
+color: black;
+background-color: yellow;
+background-size: auto;
+width: auto;
+ }
+
+ #FirstEx::first-letter {
+    font-size: 250%;
+    color: red;
+ }
