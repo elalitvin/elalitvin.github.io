@@ -3,13 +3,35 @@
 }
 
 #FirstEx {
-color: black;
-background-color: yellow;
-background-size: auto;
-width: auto;
- }
+    color: black;
+    background-color: yellow;
+}
 
- #FirstEx::first-letter {
+#FirstEx::first-letter {
     font-size: 250%;
     color: red;
- }
+}
+
+.DivFirstEx {
+    background-color: yellow;
+    display: table;
+/*float:left;                     
+/* clear:left;  */
+/*the problem with the second solution: it makes next item (h1) to appear in tjhe same row sticked to this item (and not in the new row as it ought to be)*/
+}
+
+
+#FirstEx1::first-letter {
+font-size: 250%;
+color: red;
+}
+
+#secondEx>a:link {
+text-decoration: none;
+}
+#secondEx>a:visited {
+    text-decoration: none;
+}
+#secondEx>span {
+    text-decoration: line-through;
+}
