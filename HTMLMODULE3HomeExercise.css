@@ -15,23 +15,94 @@
 .DivFirstEx {
     background-color: yellow;
     display: table;
-/*float:left;                     
+    /*float:left;                     
 /* clear:left;  */
-/*the problem with the second solution: it makes next item (h1) to appear in tjhe same row sticked to this item (and not in the new row as it ought to be)*/
+    /*the problem with the second solution: it makes next item (h1) to appear in tjhe same row sticked to this item (and not in the new row as it ought to be)*/
 }
 
 
 #FirstEx1::first-letter {
-font-size: 250%;
-color: red;
+    font-size: 250%;
+    color: red;
 }
 
 #secondEx>a:link {
-text-decoration: none;
+    text-decoration: none;
 }
+
 #secondEx>a:visited {
     text-decoration: none;
 }
+
 #secondEx>span {
     text-decoration: line-through;
+}
+
+#ThirdEx {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ex4CSS-grid-container {
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    grid-template-rows: 10% auto 10%;
+    background-color: darkblue;
+    text-align: center;
+    padding: 2%;
+}
+
+.theDOG-grid-item {
+    grid-area: 1/2/2/3;
+    align-content: end;
+    color: white;
+}
+
+.theDOGex4-grid-item {
+    grid-area: 2/2/3/3;
+    padding: 20px;
+    border: solid 2px white;
+    border-radius: 25px;
+}
+
+#theDOG4exx {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.mar4Ex {
+    height: 50%;
+    grid-area: 3/1/4/4;
+}
+
+.theDOG1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin: 2%;
+    align-content: start;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.ex4CSS1-grid-container {
+    display: grid;
+    background-color: red;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100%
+}
+
+.theDOGex41-grid-item {
+    grid-area: 1/2/2/3;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    border: 2px solid white;
+    border-radius: 3%;
+    padding: 2%;
 }
