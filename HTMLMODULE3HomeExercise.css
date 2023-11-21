@@ -175,6 +175,7 @@
     position: absolute;
     left: 45%;
     background-color: white;
+    margin-top: 50px;
 }
 
 .circle3 {
@@ -185,5 +186,27 @@
     left: 40%;
     background-color: white;
     vertical-align:sub;
-    
+    margin-top: 300px;
+}
+
+.heartTableEx7 {
+    border-collapse: collapse;
+}
+
+.tdWhite {
+    background-image: url('whiteSquareEx7.jpg');
+    height:30px;
+    width: 30px;
+}
+
+.tdBlack {
+    background-image: url('blackSquareEx7.jpg');
+    height:30px;
+    width: 30px;
+}
+
+.tdRed {
+    background-image: url('redSquareEx7.jpg');
+    height:30px;
+    width: 30px;
 }
