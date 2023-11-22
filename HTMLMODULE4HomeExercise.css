@@ -1,0 +1,97 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.HomeWork {
+    color: red;
+}
+
+.Ex1CSS2 {
+    width: 35%;
+    background-color: lightblue;
+    padding-bottom: 2%;
+}
+
+.Ex1Smileypic {
+    width: 10%;
+    float: right;
+
+}
+
+.blueDiv {
+    background-color: #d0d7d8;
+    width: 60%;
+    border: solid 3px black;
+}
+
+.blueDiv1 {
+    position: relative;
+    height: 70px;
+    width: 25%;
+    background-color: #8f969d;
+    border: solid 3px black;
+}
+
+.blueDiv2 {
+    /* position: relative; */
+    height: 70px;
+    width: 50%;
+    background-color: #7272aa;
+    border: solid 3px black;
+    display: block;
+}
+
+.blueDiv3 {
+    /* position: relative; */
+    height: 70px;
+    width: 75%;
+    background-color: #2e2e74;
+    border: solid 3px black;
+    display: block;
+}
+
+.blueDiv4 {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(11, 11, 103);
+    border: solid 3px black;
+}
+
+.universe {
+    width: 60%;
+}
+
+.universe-inner {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: end;
+    height: 300px;
+    background-image: url(universeCSS1ex5.jpeg);
+    gap: 0px;
+}
+
+.Jupiter-grid-item {
+    grid-area: 2/2/3/3;
+}
+.Jupiter {
+    max-width: 20%;
+}
+
+.Earth-grid-item {
+    grid-area: 2/3/3/4;
+}
+.Earth {
+    max-width: 50%;
+}
+
+.Mars-grid-item {
+    grid-area: 2/4/3/5;
+}
+.Mars {
+    max-width: 60%;
+}
