@@ -1,8 +1,4 @@
-body,
-html {
-    padding: 0px;
-    margin: 0px;
-}
+
 
 .HomeWork {
     color: red;
@@ -60,9 +56,6 @@ html {
     border: solid 3px black;
 }
 
-.universe {
-    width: 60%;
-}
 
 .universe-inner {
     display: grid;
@@ -71,27 +64,24 @@ html {
     justify-content: center;
     align-items: end;
     height: 300px;
+    width: 60%;
     background-image: url(universeCSS1ex5.jpeg);
     gap: 0px;
+    
 }
 
 .Jupiter-grid-item {
     grid-area: 2/2/3/3;
-}
-.Jupiter {
-    max-width: 20%;
+    width: 100px;
+    
 }
 
 .Earth-grid-item {
     grid-area: 2/3/3/4;
-}
-.Earth {
-    max-width: 50%;
-}
+    width: 150px;
+}   
 
 .Mars-grid-item {
     grid-area: 2/4/3/5;
-}
-.Mars {
-    max-width: 60%;
+    width: 200px;
 }
