@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0-99</title>
+</head>
+
+<body>
+    <h1>19/11/23 homework - Ela Litvin 319470753</h1>
+    <img src="0-99 AlgoriTm.png" height="500px">
+
+    <br><br>
+    <p>the number of digits in your number is : </p>
+    <script>
+        x = parseFloat(prompt('enter a number 0-99'))
+
+        function counting(x) {
+            return String(x).length;
+        }
+        document.write(counting(x))
+    </script>
+    <br>
+    <!--
+<script>
+    y=parseFloat( prompt('enter a num '))
+
+    if (y >= 2) { document.write('yes')}
+    else {document.write('no')}
+</script>
+-->
+
+
+    <p>Counting digits: </p>
+ <!--   <script> 
+        w = parseInt(counting(x))
+        if (w > 2) { document.write('not valid') }
+        else {
+            if (w < 1) { document.write('not valid') } else {
+                if (w = 1) { document.write('one digit') } else { document.write('two digits') }
+            }
+        }
+    </script>  
+
+    <script>
+       
+
+        if (w > 2) {document.write('not valid')}
+        else if (w < 1) {document.write('not valid')}
+        else if (w > 2) {document.write('none digit')} else {document.write('2 digits')}
+       
+    </script>
+
+    <script>
+ w=parseInt(counting(x))
+
+ if (w = 2) {document.write('2 digits')}
+debugger  else if (w = 1) {document.write('one digit')} debugger else {document.write('not valid')}
+    </script>
+-->
+<!--
+<script>
+    if (0 < x < 10) {document.write('one digit')}
+    else if (10 <= x <= 99){ document.write('two digits')}
+    else {document.write('not valid')}
+</script>   -->
+
+<script>
+   /* y=parseInt( prompt('enter a number')) */
+    if (x < 0) {document.write('not valid')}
+    else if (x < 10) {document.write('one digit')}
+    else if (x < 100) {document.write('two digits')}
+    else {document.write('not valid')}
+</script>
+<p style="color: green">I dont know why all these attempts weren`t successfull (except the last one). If you could please explain me why.</p>
+<br>
+<h3>Bonus attempt</h3>
+<script>
+    y= prompt('enter a number between 0-1000');
+    let text = y;
+    const myNum = text.match (/1|2|3|4/);
+    if (myNum > 0) {document.write(y)}
+    else {document.write('write another num')}
+
+</script>
+</body>
+
+</html>
