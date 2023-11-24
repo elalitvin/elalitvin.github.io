@@ -1,5 +1,3 @@
-
-
 .HomeWork {
     color: red;
 }
@@ -67,21 +65,238 @@
     width: 60%;
     background-image: url(universeCSS1ex5.jpeg);
     gap: 0px;
-    
+    position: relative;
 }
 
 .Jupiter-grid-item {
     grid-area: 2/2/3/3;
     width: 100px;
-    
+
 }
 
 .Earth-grid-item {
     grid-area: 2/3/3/4;
     width: 150px;
-}   
+}
 
 .Mars-grid-item {
     grid-area: 2/4/3/5;
     width: 200px;
+}
+
+.circle1 {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 40%;
+    top: 15%;
+}
+
+.circle2 {
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45%;
+}
+
+.circle3 {
+    position: absolute;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: 35%;
+    top: 70%;
+}
+
+.containerEx5 {
+    width: 60%;
+}
+
+.yellowEx5 {
+    background-color: yellow;
+
+    float: left;
+    width: 50%;
+    height: 200px;
+    p
+}
+
+.greenEx5 {
+    background-color: yellowgreen;
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+
+.darkgreenEx5 {
+    background-color: darkgreen;
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+.lightblueEx6 {
+    height: 400px;
+    width: 60%;
+    border: solid 1px black;
+    background-color: lightblue;
+}
+
+.lightblueEx6>header {
+    height: 10%;
+}
+
+.lightblueEx6>footer {
+    height: 10%;
+    position: absolute;
+    
+}
+
+.purpleNavEx6 {
+    background-color: purple;
+    position: relative;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.whiteSectionEx6 {
+    background-color: white;
+position:absolute;
+width: 100%;
+height: 90%;
+bottom: 0px;
+
+}
+
+.greenSectionEx6 {
+    background-color: green;
+    bottom: 10px;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+
+
+.mainEx7 {
+width: 60%;
+text-align: center;
+}
+
+.mainEx7 > header {
+    background-color: purple;
+    color: white;
+    height: 40px;
+}
+
+.mainEx7 > footer {
+    background-color: lightslategray;
+    color: white;
+    height: 40px;
+}
+
+.navEx7 {
+    background-color: blue;
+    color: white;
+width: 100%;
+}
+
+.lightpinkEx7 {
+    background-color: lightpink;
+    padding: 1%;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    box-sizing: border-box;    /*important: padding and border are included in the width and height */
+}
+
+.tablesEx7 {
+
+height: 100%;
+width: 100%;
+
+}
+
+.redTableEx7 {
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    float: left;
+    margin: 0px;
+    
+}
+
+.ex7 /* table */{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px white;
+    border-collapse: collapse;
+}
+
+td {
+    border: solid 1px white;
+   
+}
+
+
+.yellowTableEx7 {
+    background-color: orange;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+
+.greenTableEx7 {
+    background-color: green;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+
+.pinkTableEx7 {
+    background-color: fuchsia;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+
+.mediaGueryEx8 {
+    background-color: orange;
+    height: 400px;
+    width: 100%;
+}
+
+@media  (max-width: 992px) 
+{
+    .mediaGueryEx8 {background-color: blue;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediaGueryEx8 {background-color: green;}
+}
+
+@media (max-width: 576px)
+{
+    .mediaGueryEx8 {background-color: red;}
 }
