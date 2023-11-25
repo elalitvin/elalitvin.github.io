@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class=".container m-3">
+
+        <h1 style="color: red">EXERCISE 1</h1>
+        <hr class="mb-0 col-3">
+        <p class="h3 mx-5 mt-0">Bootstrap <span class="text-black-50 small">Lets get started.</span></p>
+        <br><br>
+
+        <h1 style="color: red">EXERCISE 2</h1>
+        <p class="h3 mx-3 text-capitalize">user input</p>
+        <p class="mx-3">Use ls to list all files in the current directory. <br>
+            To copy files, select the files and press <kbd>ctrl + c</kbd> <br>
+            To paste files, select the files and press <kbd>ctrl + v</kbd>
+        </p>
+
+        <h1 style="color: red">EXERCISE 3 - Use scroll in bootstrap:</h1>
+
+        <div id="scrollbody" style="height: 150px; overflow-y: scroll;" data-bs-spy="scroll"
+            data-bs-target="scrollbody">
+            <p class="h3 text-capitalize m-4">title one</p>
+            <pre class="m-4">A line of sample text</pre>
+            <pre class="m-4">Another line of sample text</pre>
+            <pre class="m-4">Yet another line of sample text</pre>
+        </div>
+        <br><br>
+
+        <h1 style="color: red">EXERCISE 4</h1>
+        <div class="my-3 mx-4">
+            <p class="h3 text-capitalize">inline code</p>
+            <p>We define paragraphs in <span class="text-uppercase">html</span> using the <code>p</code> tag.
+                <code>&lt;p&gt;</code>
+            </p>
+        </div>
+        <br><br>
+        <h1 style="color: red">EXERCISE 5</h1>
+        <div id="outlineButtons">
+            <p class="h4">Bootstrap in colors</p>
+            <button class="btn btn-outline-primary btn-sm">Primary</button>
+            <button class="btn btn-outline-secondary btn-sm">Secondary</button>
+            <button class="btn btn-outline-success btn-sm">Success</button>
+            <button class="btn btn-outline-danger btn-sm">Danger</button>
+            <button class="btn btn-outline-warning btn-sm">Warning</button>
+            <button class="btn btn-outline-info btn-sm">Info</button>
+            <button class="btn btn-outline-dark btn-sm">Dark</button>
+        </div>
+        <br>
+        <div id="btn-group" class="btn-group">
+            <button class="btn btn-danger btn-sm">Left</button>
+            <button class="btn btn-warning btn-sm">Middle</button>
+            <button class="btn btn-success btn-sm">Right</button>
+        </div>
+        <br>
+        <div id="navsgroup" class="my-3">
+            <div id="greynav" class="navbar bg-dark p-1" role="navigation" ><p>Nav</p><button class="btn btn-outline-success">button</button></div>
+            <div id="bluenav" class="navbar bg-primary p-1" role="navigation"><p>Nav</p><button class="btn btn-outline-danger">button</button></div>
+            <div id="pinknav" class="navbar p-1" role="navigation" style="background-color: pink;"><p>Nav</p><button class="btn btn-outline-light">button</button></div>
+        </div>
+        <p>Sorry, I dont know how to make last nav pink by Bootstrap</p>
+        <p class="h4">Disable button</p>
+        <button class="btn btn-success disabled">button</button>
+
+
+    </div>
+
+
+
+
+    <!--
+The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, xl, and xxl.
+
+Where property is one of:
+
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+
+    -->
+</body>
+
+</html>
