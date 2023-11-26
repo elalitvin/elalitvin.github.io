@@ -1,15 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
 </head>
+
 <body>
-    <h1 style="color: red">EXERCISE 1></h1>
-    <h2><p>a - Create the following style using Bootstrap:</p></h2>
+    <h1 style="color: red">EXERCISE 1</h1>
+    <h3>
+        <p>a - Create the following style using Bootstrap:</p>
+    </h3>
+    <div class="row">
+        <div id="ex1div1" class="col-md-3 bg-warning-subtle p-1">col-md-3</div>
+        <div id="ex1div2" class="col-md-3 bg-danger-subtle p-1">col-md-3</div>
+        <div id="ex1div3" class="col-md-3 bg-danger p-1">col-md-3</div>
+        <div id="ex1div4" class="col-md-3 bg-primary-subtle p-1">col-md-3</div>
+    </div>
+    <br><br>
+    <h3>
+        <p>b - 4 different types of cart styling, make sure you are using Bootstrap and not building it by
+            yourself:</p>
+    </h3>
+    <div class="row"> <!-- ??????? box-sizing  -->
+
+        <div class="card bg-warning-subtle col-md-3 mx-0">
+            <div id="innerBackground1" class="bg-white mx-3">
+                <img src="https://th.bing.com/th/id/R.a89776af96c0ff07219049365dea6128?rik=ixmXnzfIOeXu2g&pid=ImgRaw&r=0"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Card Title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card`s
+                        content.</p>
+                    <a href="https://www.canva.com/cards/templates/"><button class="btn btn-primary"> Go
+                            somewhere</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card bg-danger-subtle col-md-3 mx-0">
+            <div id="innerBackground2" class="bg-white mx-3">
+                <img src="https://th.bing.com/th/id/R.a89776af96c0ff07219049365dea6128?rik=ixmXnzfIOeXu2g&pid=ImgRaw&r=0"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Card Title</h4>
+                    <h4 id="card-Subtitle" class="card-title text-muted small">Card Subtitle</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card`s
+                        content.</p>
+                    <a href="https://www.canva.com/cards/templates/">First link</button></a>
+                    <a href="https://www.greetingsisland.com/cards" class="ms-4">Second link</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card bg-danger col-md-3 mx-0">
+            <div id="innerBackground3" class="bg-white mx-3 my-0" style="height: 100%">
+                <img src="https://th.bing.com/th/id/R.a89776af96c0ff07219049365dea6128?rik=ixmXnzfIOeXu2g&pid=ImgRaw&r=0"
+                    class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card`s
+                        content.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card bg-primary-subtle col-md-3">
+            <div id="innerBackground3" class="bg-white mx-3" style="height: 100%">
+                <div class="card-header">Header</div>
+                <img src="https://th.bing.com/th/id/R.a89776af96c0ff07219049365dea6128?rik=ixmXnzfIOeXu2g&pid=ImgRaw&r=0"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Card Title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card`s content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <h1 style="color: red">EXERCISE 2</h1>
+    <div class="container" style="background-color: lightblue; border: solid 1px;">
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-6" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-6" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-3" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-3" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-3" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+            <div class="col-3" style="background-color: lightblue; border: solid 1px;">
+                <p>column 4</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-6" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-6" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-2" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-6" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-2" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-5" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-5" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 4</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 5</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 6</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 7</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 8</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 9</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 10</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 11</p>
+            </div>
+            <div class="col-1" style="background-color: lightblue; border: solid 1px;">
+                <p>column 12</p>
+            </div>
+        </div>
+        <div class="row " style="background-color: lightblue; border: solid 1px;">
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 1</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 2</p>
+            </div>
+            <div class="col-4" style="background-color: lightblue; border: solid 1px;">
+                <p>column 3</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h1 style="color: red">EXERCISE 3 </h1>
+    <h4 style="color: red">Create this responsive content with different view for the mobile, tablet and desktop screen:
+    </h4>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 p-4 bg-warning-subtle" ></div>
+            <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 p-4 border-border-4 bg-warning"></div>
+        </div>
+<div class="row">
+    <div class="col p-4 bg-danger "></div>
+</div>
+<div class="row">
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-4  bg-info"></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-4  bg-info-subtle"></div>
+    <div class="d-sm-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 p-4  bg-info"></div>
+</div>
+    </div>
+
+
     
 </body>
+
 </html>
