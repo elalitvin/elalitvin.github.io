@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework JS 03/12/23 Ela Litvin</title>
+</head>
+
+<body>
+    <h1>Exercise 1</h1>
+    <h3>Write a for loop that prints the numbers from 12 to 24</h3>
+    <script>
+        document.write('loop while')
+        document.write('<br>')
+        let a = 12
+        while (a < 25) { document.write(a++ + ' ') }
+        document.write('end')
+        document.write('<br><br>')
+
+        document.write('loop for')
+        document.write('<br>')
+        for (let a = 12; a < 25; a++ + ' ') { document.write(a + ' ') }
+    </script>
+    <h1>Exercise 2</h1>
+    <h3>Write a for loop that prints the ODD numbers from 7 to 31</h3>
+    <script>
+        document.write('loop while')
+        document.write('<br>')
+        let b = 7
+        document.write(b + ' ')
+        while (b < 32) {
+            document.write(b += 2)
+            document.write(' ')
+        }
+        document.write('end')
+        document.write('<br><br>')
+
+        document.write('loop for')
+        document.write('<br>')
+        for (let b = 7; b < 32; b += 2) { document.write(b + ' ') }
+    </script>
+
+    <h1>Exercise 3</h1>
+    <h3>Write a for loop that prints the EVEN numbers from 10 to -20</h3>
+    <script>
+        document.write('loop while')
+        document.write('<br>')
+        let c = 10
+        document.write(c + ' ')
+        while (c > -20) {
+            document.write(c -= 2)
+            document.write(' ')
+        }
+        document.write('end')
+        document.write('<br><br>')
+
+        document.write('loop for')
+        document.write('<br>')
+        for (c = 10; c >= -20; c -= 2) { document.write(c + ' ') }
+        document.write('<br><br>')
+    </script>
+
+    <h1>Exercise 4</h1>
+    <h3>Write a for loop that iterates through all numbers from 1 to 45. Print the following:</h3>
+    <ul>
+        <li>For each multiples of 3 print “Fizz”</li>
+        <li>For each multiples of 5 print “Buzz”</li>
+        <li>For each multiples of 3 and 5 print “FizzBuzz”</li>
+    </ul>
+    <script>
+        document.write('loop while')
+        document.write('<br>')
+        let d = 1
+        while (d <= 45) {
+            document.write(d++ + ' ')
+            while (d % 3 == 0) { document.write(d++ + 'Fizz ') }
+        }
+        document.write('<br>')
+
+        let e = 1
+        while (e <= 45) {
+            document.write(e++ + ' ')
+            while (e % 5 == 0) { document.write(e++ + 'Fuzz ') }
+        }
+        document.write('<br>')
+        let f = 1
+        while (f <= 45) {
+            document.write(f++ + ' ')
+            while (f % (3 * 5) == 0) { document.write(f++ + 'FIZZFUZZ ') }
+        }
+        document.write('<br><br>')
+
+        document.write('loop for')
+        document.write('<br>')
+        for (let d = 1; d <= 45; d++) {
+            document.write(d + ' ')
+            for (let e = d; e % 3 == 0; e += 2) { document.write(' Fizz ') }
+        }
+        document.write('<br>')
+        for (let f = 1; f <= 45; f++) {
+            document.write(f + ' ')
+            for (let g = f; g % 5 == 0; g += 2) { document.write(' fuzz ') }
+        }
+        document.write('<br>')
+        for (let h = 1; h <= 45; h++) {
+            document.write(h + ' ')
+            for (let i = h; i % (3 * 5) == 0; i += 2) { document.write(' FIZZFUZZ ') }
+        }
+    </script>
+
+    <h1>Exercise 5</h1>
+    <h3>Write a function that receives an array that calculates the sum of all the numbers in the
+        following array:</h3>
+    <p><b>var numbersArray = [1,13,22,123,49,34,5,24,57,45]</b></p>
+    <script>
+ 
+        document.write('loop while')
+        document.write('<br>')
+        const numbersArrayy = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
+        let i = 0
+        let w = 0
+        while ( i <= 10) {document.write(w = w + numbersArrayy[i++])
+        document.write(' ')}
+    
+    </script>
+<br><br>
+    <script>
+        document.write('loop for')
+        document.write('<br>')
+        const numbersArray = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
+        // for (let numzz = 0; numzz < numbersArray.length; numzz++) 
+       // {
+            // document.write(numbersArray[numzz] + ' ') - writes all the array
+            // document.write(numbersArray.length) - writes 10 times array`s length
+            // let sum = 0;
+           //  for (let i in numbersArray) {
+              //  sum = sum + numbersArray[i];
+                // sum += numbersArray[i]
+          //  }
+          //  document.write(sum)
+          //  document.write(' ')
+       // }
+        let sum = 0;
+            for (let i in numbersArray) {
+              //  sum = sum + numbersArray[i];
+                 sum += numbersArray[i]
+            }
+            document.write(sum)
+            document.write(' ')
+
+        document.write('<br>')
+    </script>
+    <script>
+        document.write('another try')
+        const numbersArrayyy = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
+        let suum = 0;
+            for (let i = 0; i <= numbersArrayyy.length; i++) {
+              //  suum = suum + numbersArray[i];
+                 suum += numbersArrayyy[i]
+            }
+            document.write(suum)
+            document.write(' ')
+
+        document.write('<br>')
+    </script>
+</body>
+
+</html>
