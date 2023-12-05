@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework JS 30/11/23 Ela Litvin</title>
+</head>
+
+<body>
+    <h1>Homework Javascript 30/11/23
+        <h3>Exersice 1</h3>
+    </h1>
+    <script>
+        let a = 1
+        while (a < 100) { document.write(a++ + ' ') }
+        document.write('end')
+    </script>
+    <br><br>
+
+    <h3>Exercise 2</h3>
+    <script>
+        let b = 99
+        while (b > 0) { document.write(b-- + ' ') }
+        document.write('end')
+    </script>
+    <br><br>
+
+    <h3>Exercise 3</h3>
+    <script>
+        let c = 99
+        document.write(c + ' ')
+        document.write(c -= 1)
+        document.write(' ')
+        while (c > 2) {
+            document.write(c -= 2)
+            document.write(' ')
+        }
+        document.write('end')
+    </script>
+    <br><br>
+
+    <h3>Exercise 4</h3>
+    <script>
+        d = parseInt(prompt('enter a number (d 4th exercise)'))
+        while (d > 0) { document.write(d-- + ' ') }
+        document.write('end')
+    </script>
+    <br>
+
+    <h4>only positive number</h4>
+
+    
+    <script>
+        e = parseInt(prompt('enter a number (positive number e exercise 4)'))
+        if (e < 0) { document.write('enter a positive number') }
+        else {
+            while (e >= 0) { document.write(e-- + ' ') }
+            document.getElementById('mypic').innerHTML='<img src="https://th.bing.com/th/id/R.7abc9f21f48f26a1a1dad1070b9030d8?rik=dJgl5XPp73rNKA&riu=http%3a%2f%2freciperhapsody.files.wordpress.com%2f2010%2f11%2fmocha-crunch-cake-11-14-10.jpg&ehk=KH8PgXHONggWqm%2bM6KEYx2QOFqKjcvj3VOXcvfu6Kis%3d&risl=&pid=ImgRaw&r=0" width="100px">'
+        }  
+    </script>
+    <p id="mypic"></p>
+    <!--
+    <script>
+        document.getElementById('mypic').innerHTML='<img src="https://th.bing.com/th/id/R.7abc9f21f48f26a1a1dad1070b9030d8?rik=dJgl5XPp73rNKA&riu=http%3a%2f%2freciperhapsody.files.wordpress.com%2f2010%2f11%2fmocha-crunch-cake-11-14-10.jpg&ehk=KH8PgXHONggWqm%2bM6KEYx2QOFqKjcvj3VOXcvfu6Kis%3d&risl=&pid=ImgRaw&r=0" width="100px">';
+    </script>  
+-->
+</body>
+
+</html>
