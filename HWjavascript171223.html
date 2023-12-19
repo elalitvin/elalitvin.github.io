@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS homework 17/12/23</title>
+</head>
+
+<body>
+    <h2>Exercise 1 </h2>
+    <script>
+        Fifty_five = new Array(100).fill(55)
+        document.write(Fifty_five)
+    </script>
+
+    <h2>Exercise 2</h2>
+    <script>
+                how_many_numbers = parseInt(prompt('how many numbers to put in the array? '))
+                a = parseFloat(prompt('enter a number'))
+                numbers = new Array(how_many_numbers).fill(a)
+                document.write('you decided to put ' + how_many_numbers + ' numbers in the array')
+                document.write('<br>')
+            document.write('the array is ' + numbers)
+                document.write('<br>')
+                document.write('the array is: ' + numbers(a))
+                document.write('<br>')
+    </script>
+
+    
+    <h2>Exercise 3</h2>
+    <script>
+        number_of_students = parseInt(prompt('enter a number of students '))
+        grades = new Array(number_of_students).fill(0)
+
+        for (b = 0; b < grades.length; b++) {
+            grades[b] = parseFloat(prompt('enter a grade '))
+        }
+        document.write('the class grades are: ' + grades)
+        document.write('<br>')
+        let sum = 0;
+        for (b = 0; b < grades.length; b++) {
+            sum = sum + grades[b]
+            avg = sum / grades.length
+        }
+        document.write('the class average is: ' + avg)
+        document.write('<br>')
+
+        document.write('above average: ')
+        for (b = 0; b < grades.length; b++) {
+            if (grades[b] > avg) {
+                document.write(grades[b] + ', ')
+            }
+        }
+        document.write('<br>')
+
+        document.write('on the average: ')
+        for (b = 0; b < grades.length; b++) {
+            if (grades[b] == avg) { document.write(grades[b] + ', ') }
+        }
+
+        document.write('<br>')
+
+        document.write('below average: ')
+        for (b = 0; b < grades.length; b++) {
+            if (grades[b] < avg) {
+                document.write(grades[b] + ', ')
+            }
+            document.write('<br>')
+        }
+
+
+        document.write('<br')
+    </script>
+
+
+    <h2>Exercise 4</h2>
+    
+    <script>
+        number_of_students = parseInt(prompt('enter a number of students '))
+        grades = new Array(number_of_students).fill(0)
+
+        for (b = 0; b < grades.length; b++) {
+            grades[b] = parseFloat(prompt('enter a grade '))
+        }
+        document.write('the class grades are: ' + grades)
+        document.write('<br>')
+        let sum = 0;
+        for (b = 0; b < grades.length; b++) {
+            sum = sum + grades[b]
+            avg = sum / grades.length
+        }
+        document.write('the class average is: ' + avg)
+        document.write('<br>')
+
+        document.write('90+ exellent: ')
+        for (b = 0; b < grades.length; b++) {
+            if (grades[b] > 90) {
+                document.write(grades[b] + ', ')
+            }
+
+        }
+        document.write('<br>')
+
+        document.write('70-89 good: ')
+        for (b = 0; b < grades.length; b++) {
+            if (89 >= grades[b] && grades[b] >= 70) { document.write(grades[b] + ', ') }
+        }
+
+        document.write('<br>')
+
+        document.write('50-69 average: ')
+        for (b = 0; b < grades.length; b++) {
+            if (69 >= grades[b] && grades[b] >= 50) { document.write(grades[b] + ', ') }
+            
+        }
+        document.write('<br>')
+
+        document.write('50-- bad: ')
+        for (b = 0; b < grades.length; b++) {
+            if (50 > grades[b]) {
+                document.write(grades[b] + ', ')
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
