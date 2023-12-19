@@ -16,18 +16,18 @@
 
     <h2>Exercise 2</h2>
     <script>
-                how_many_numbers = parseInt(prompt('how many numbers to put in the array? '))
-                a = parseFloat(prompt('enter a number'))
-                numbers = new Array(how_many_numbers).fill(a)
-                document.write('you decided to put ' + how_many_numbers + ' numbers in the array')
-                document.write('<br>')
-            document.write('the array is ' + numbers)
-                document.write('<br>')
-                document.write('the array is: ' + numbers(a))
-                document.write('<br>')
+        how_many_numbers = parseInt(prompt('how many numbers to put in the array? '))
+        a = parseFloat(prompt('enter a number'))
+        numbers = new Array(how_many_numbers).fill(a)
+        document.write('you decided to put ' + how_many_numbers + ' numbers in the array')
+        document.write('<br>')
+        document.write('the array is ' + numbers)
+        document.write('<br>')
+        document.write('the array is: ' + numbers(a))
+        document.write('<br>')
     </script>
 
-    
+
     <h2>Exercise 3</h2>
     <script>
         number_of_students = parseInt(prompt('enter a number of students '))
@@ -47,11 +47,14 @@
         document.write('<br>')
 
         document.write('above average: ')
+        let count = 0;
         for (b = 0; b < grades.length; b++) {
             if (grades[b] > avg) {
+                count++
                 document.write(grades[b] + ', ')
             }
         }
+        document.write('number of students above average ' + count++)
         document.write('<br>')
 
         document.write('on the average: ')
@@ -62,12 +65,16 @@
         document.write('<br>')
 
         document.write('below average: ')
+        let count1 = 0;
         for (b = 0; b < grades.length; b++) {
             if (grades[b] < avg) {
+                count1++
                 document.write(grades[b] + ', ')
             }
-            document.write('<br>')
         }
+        document.write('number of students below average ' + count1++)
+        document.write('<br>')
+
 
 
         document.write('<br')
@@ -75,7 +82,7 @@
 
 
     <h2>Exercise 4</h2>
-    
+
     <script>
         number_of_students = parseInt(prompt('enter a number of students '))
         grades = new Array(number_of_students).fill(0)
@@ -112,7 +119,7 @@
         document.write('50-69 average: ')
         for (b = 0; b < grades.length; b++) {
             if (69 >= grades[b] && grades[b] >= 50) { document.write(grades[b] + ', ') }
-            
+
         }
         document.write('<br>')
 
