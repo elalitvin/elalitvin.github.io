@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h4>Choose on of above: </h4>
+    <p>0 - rock </p>
+    <p>1 - paper </p>
+    <p>2 - scissor</p>
+    <img id="userROUND" src="" height="200">
+    <hr>
+    <img id="compROUND" src="" height="200">
+
+    <script>
+        let userR = parseInt(prompt('choose the number between 0-2 '))
+        switch (userR) {
+            case 0: document.getElementById('userROUND').src = "/pictures/rock.jpg"
+                break;
+            case 1: document.getElementById('userROUND').src = "\\pictures\\paper.jpg"
+                break;
+            case 2: document.getElementById('userROUND').src = "/pictures/scissors.jpg"
+                break;
+        }
+        let compR = parseInt(Math.random() * 3)
+        switch (compR) {
+            case 0: document.getElementById('compROUND').src = "/pictures/rock.jpg"
+                break;
+            case 1: document.getElementById('compROUND').src = "\\pictures\\paper.jpg"
+                break;
+            case 2: document.getElementById('compROUND').src = "/pictures/scissors.jpg"
+                break;
+        }
+
+        if (userR > compR) {
+            document.write('you win')
+        }
+        else if (userR == 0 && compR == 2) {
+            document.write('you win')
+        } else if (userR == compR) {
+            document.write('DRAW')
+        } else if (compR == 0 && userR == 2) {
+            document.write('you loose')
+        } else { document.write('you loose') }
+
+    </script>
+</body>
+
+</html>

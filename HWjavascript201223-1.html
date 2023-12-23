@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+</head>
+
+<body>
+
+    <img id="CARDS_user0" src="" height="200">
+    <img id="CARDS_user1" src="" height="200">
+    <img id="CARDS_user2" src="" height="200">
+    <img id="CARDS_user3" src="" height="200">
+    <img id="CARDS_user4" src="" height="200">
+
+
+    <hr />
+    <img id="CARDS_computer1" src="" height="200">
+    <img id="CARDS_computer2" src="" height="200">
+    <img id="CARDS_computer3" src="" height="200">
+    <img id="CARDS_computer4" src="" height="200">
+    <img id="CARDS_computer5" src="" height="200">
+
+    <script>
+        userARRAY = new Array(0).fill(0)
+
+        for (u = 0; u < 5; u++) {
+            userARRAY[u] = parseInt(prompt('enter your card of choise (2-15)'))
+        }
+        
+        document.write('<br />')
+
+        switch (userARRAY[0]) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_user0').src = "/images/" + userARRAY[0] + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_user0').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_user0').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_user0').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_user0').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_user0').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (userARRAY[1]) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_user1').src = "/images/" + userARRAY[1] + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_user1').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_user1').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_user1').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_user1').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_user1').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (userARRAY[2]) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_user2').src = "/images/" + userARRAY[2] + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_user2').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_user2').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_user2').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_user2').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_user2').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (userARRAY[3]) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_user3').src = "/images/" + userARRAY[3] + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_user3').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_user3').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_user3').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_user3').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_user3').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (userARRAY[4]) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_user4').src = "/images/" + userARRAY[4] + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_user4').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_user4').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_user4').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_user4').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_user4').src = "/images/JOKER.png"
+                break;
+        }
+        
+        const comp_card1 = parseInt(Math.random() * 14) + 2
+        const comp_card2 = parseInt(Math.random() * 14) + 2
+        const comp_card3 = parseInt(Math.random() * 14) + 2
+        const comp_card4 = parseInt(Math.random() * 14) + 2
+        const comp_card5 = parseInt(Math.random() * 14) + 2
+
+        
+        switch (comp_card1) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_computer1').src = "/images/" + comp_card1 + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_computer1').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_computer1').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_computer1').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_computer1').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_computer1').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (comp_card2) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_computer2').src = "/images/" + comp_card2 + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_computer2').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_computer2').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_computer2').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_computer2').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_computer2').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (comp_card3) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_computer3').src = "/images/" + comp_card3 + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_computer3').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_computer3').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_computer3').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_computer3').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_computer3').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (comp_card4) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_computer4').src = "/images/" + comp_card4 + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_computer4').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_computer4').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_computer4').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_computer4').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_computer4').src = "/images/JOKER.png"
+                break;
+        }
+
+        switch (comp_card5) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10: document.getElementById('CARDS_computer5').src = "/images/" + comp_card5 + "_of_hearts.png"
+                break;
+            case 11: document.getElementById('CARDS_computer5').src = "/images/J_of_hearts.png"
+                break;
+            case 12: document.getElementById('CARDS_computer5').src = "/images/A_of_hearts.png"
+                break;
+            case 13: document.getElementById('CARDS_computer5').src = "/images/K_of_hearts.png"
+                break;
+            case 14: document.getElementById('CARDS_computer5').src = "/images/Q_of_hearts.png"
+                break;
+            case 15: document.getElementById('CARDS_computer5').src = "/images/JOKER.png"
+                break;
+        }
+       
+
+userPOINTS = new Array(5).fill(0)
+compPOINTS = new Array(5).fill(0)
+        document.write('<br /><br />')
+        if (userARRAY[0] > comp_card1) {
+userPOINTS[0] +=1
+        } else if (
+            userARRAY[0] == comp_card1) {
+userPOINTS[0] += 0.5
+compPOINTS[0] += 0.5
+            } else {
+                compPOINTS[0] += 1
+            }
+
+        if (userARRAY[1] > comp_card2) {
+userPOINTS[1] +=1
+        } else if (
+            userARRAY[1] == comp_card2) {
+userPOINTS[1] += 0.5
+compPOINTS[1] += 0.5
+            } else {
+                compPOINTS[1] += 1
+            }
+
+            if (userARRAY[2] > comp_card3) {
+userPOINTS[2] +=1
+        } else if (
+            userARRAY[2] == comp_card3) {
+userPOINTS[2] += 0.5
+compPOINTS[2] += 0.5
+            } else {
+                compPOINTS[2] += 1
+            }
+
+            if (userARRAY[3] > comp_card4) {
+userPOINTS[3] +=1
+        } else if (
+            userARRAY[3] == comp_card4) {
+userPOINTS[3] += 0.5
+compPOINTS[3] += 0.5
+            } else {
+                compPOINTS[3] += 1
+            }
+            if (userARRAY[4] > comp_card5) {
+userPOINTS[4] +=1
+        } else if (
+            userARRAY[4] == comp_card5) {
+userPOINTS[4] += 0.5
+compPOINTS[4] += 0.5
+            } else {
+                compPOINTS[4] += 1
+            }
+
+        document.write('your points: ' + userPOINTS)
+        document.write('<br />')
+        document.write('computer points: ' + compPOINTS)
+        document.write('<br />')
+
+        let your_sum = 0;
+        for (u = 0; u < userPOINTS.length; u++) {
+            your_sum += userPOINTS[u]
+        }
+        document.write('<br />')
+        document.write('sum of your points is: ' + your_sum)
+
+        let comp_sum = 0;
+        for (c = 0; c < compPOINTS.length; c++) {
+            comp_sum += compPOINTS[c]
+        }
+        document.write('<br />')
+        document.write('sum of computer points is: ' + comp_sum)
+
+        if (your_sum > comp_sum) {
+            document.write('<h1 style="color: green"> you win </h1>')
+        } else if (your_sum == comp_sum) {
+            document.write('<h2>draw</h2>')
+        } else {
+            document.write('<h1 style="color: red">you loose</h1>')
+        }
+    </script>
+</body>
+
+</html>

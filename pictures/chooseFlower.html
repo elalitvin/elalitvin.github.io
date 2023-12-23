@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+<script>
+function choosFlower(sw) {
+var pic;
+if (sw==0) {pic="Anemone_coronaria.jpg"}
+else {pic="matricaria.jpg"}
+document.getElementById("flow").src=pic;
+}
+
+</script>
+
+<img id="flow" src="Chooseflower.jpg">
+<br>
+<button onclick="choosFlower(0)">pic1</button>
+<button onclick="choosFlower(1)">pic2</button>
+
+</body>
+</html>
