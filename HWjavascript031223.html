@@ -29,7 +29,7 @@
         document.write('<br>')
         let b = 7
         document.write(b + ' ')
-        while (b < 32) {
+        while (b < 31) {
             document.write(b += 2)
             document.write(' ')
         }
@@ -74,20 +74,23 @@
         let d = 1
         while (d <= 45) {
             document.write(d++ + ' ')
-            while (d % 3 == 0) { document.write(d++ + 'Fizz ') }
+            while (d % 3 == 0) { document.write(d++ + 'Fizz ')
+            
+             }
         }
         document.write('<br>')
 
-        let e = 1
-        while (e <= 45) {
-            document.write(e++ + ' ')
-            while (e % 5 == 0) { document.write(e++ + 'Fuzz ') }
+        let ee = 1
+        while (ee <= 45) {
+            document.write(ee++ + ' ')
+            while (ee % 5 == 0) { document.write(ee++ + 'Buzz ')
+         }
         }
         document.write('<br>')
         let f = 1
         while (f <= 45) {
             document.write(f++ + ' ')
-            while (f % (3 * 5) == 0) { document.write(f++ + 'FIZZFUZZ ') }
+            while (f % (3 * 5) == 0) { document.write(f++ + 'FIZZBUZZ ') }
         }
         document.write('<br><br>')
 
@@ -100,12 +103,12 @@
         document.write('<br>')
         for (let f = 1; f <= 45; f++) {
             document.write(f + ' ')
-            for (let g = f; g % 5 == 0; g += 2) { document.write(' fuzz ') }
+            for (let g = f; g % 5 == 0; g += 2) { document.write(' Buzz ') }
         }
         document.write('<br>')
         for (let h = 1; h <= 45; h++) {
             document.write(h + ' ')
-            for (let i = h; i % (3 * 5) == 0; i += 2) { document.write(' FIZZFUZZ ') }
+            for (let i = h; i % (3 * 5) == 0; i += 2) { document.write(' FIZZBUZZ ') }
         }
     </script>
 
@@ -120,49 +123,25 @@
         const numbersArrayy = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
         let i = 0
         let w = 0
-        while ( i <= 10) {document.write(w = w + numbersArrayy[i++])
+        while ( i < 10) {document.write(w = w + numbersArrayy[i++])
         document.write(' ')}
     
     </script>
 <br><br>
+
     <script>
         document.write('loop for')
         document.write('<br>')
         const numbersArray = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
-        // for (let numzz = 0; numzz < numbersArray.length; numzz++) 
-       // {
-            // document.write(numbersArray[numzz] + ' ') - writes all the array
-            // document.write(numbersArray.length) - writes 10 times array`s length
-            // let sum = 0;
-           //  for (let i in numbersArray) {
-              //  sum = sum + numbersArray[i];
-                // sum += numbersArray[i]
-          //  }
-          //  document.write(sum)
-          //  document.write(' ')
-       // }
-        let sum = 0;
-            for (let i in numbersArray) {
-              //  sum = sum + numbersArray[i];
-                 sum += numbersArray[i]
+       
+        for (let p = 0; p < numbersArray.length; p++) {
+            let sum = 0;
+            
+            for (let i = 0; i < numbersArray.length; i++) {
+                sum = sum + numbersArray[i]
             }
-            document.write(sum)
-            document.write(' ')
-
-        document.write('<br>')
-    </script>
-    <script>
-        document.write('another attempt')
-        const numbersArrayyy = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
-        let suum = 0;
-            for (let i = 0; i <= numbersArrayyy.length; i++) {
-              //  suum = suum + numbersArray[i];
-                 suum += numbersArrayyy[i]
-            }
-            document.write(suum)
-            document.write(' ')
-
-        document.write('<br>')
+            document.write(sum + ' ')
+        }
     </script>
 </body>
 
