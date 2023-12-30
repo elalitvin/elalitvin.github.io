@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 24/12/23 - Calculator</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+        }
+
+        .grid-item5 {
+            background-color: pink;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <!--plaicing the calculator on the page - in grid-item5-->
+    <div class="grid-container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+        <div class="grid-item4"></div>
+        <div class="grid-item5" style="text-align: center;">
+            <input id="num1" type="number" style="width: 50px;">
+            <input id="num2" type="number" style="width: 50px;">
+            <br><br>
+            <button id="plus" style="width:40px" onclick="PLUS()">+</button>
+            <button id="minus" style="width:40px" onclick="MINUS()">-</button>
+            <button id="multiple" style="width:40px" onclick="MULT()">X</button>
+            <button id="divide" style="width:40px" onclick="DIVIDE()">/</button>
+            <br><br>
+            <button id="RANDOM" onclick="RandomFunc()">Random Numbers</button>
+            <button id="EXPONENTIATION" onclick="EXP()">Exponentiation</button>
+            <!--   <button onmouseover="PLUS()">attempt</button>  -->
+            <br><br>
+            <p id="result"></p>
+            <script>
+                // defining main functions of the calculator
+                function PLUS() {
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 + number2)
+                }
+                function MINUS() {
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 - number2)
+                }
+                function MULT() {
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 * number2)
+                }
+                function DIVIDE() {
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 / number2)
+                    if (number2 == 0) {
+                        document.getElementById('result').innerHTML = '<span style="color: red"><b>Result NaN</b></span>'
+                    }
+                }
+// defining the responsibility of the buttons
+// plus button
+                document.getElementById('plus').onmouseover = function () { ButtonPlusResponsive1() };
+                document.getElementById('plus').onmouseout = function () { ButtonPlusResponsive2() };
+                document.getElementById('plus').onclick = function () { PLUS() };
+                function ButtonPlusResponsive1() {
+                    document.getElementById('plus').style.backgroundColor = "green";
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 + number2)
+                }
+                function ButtonPlusResponsive2() {
+                    document.getElementById('plus').style.backgroundColor = "buttonface";
+           //         document.getElementById('result').innerHTML = ""         --if to cancel //tag, the result will disappear
+                }
+              
+// minus button
+                document.getElementById('minus').onmouseover = function () { ButtonMinusReponsive1() };
+                document.getElementById('minus').onmouseout = function () { ButtonMinusReponsive2() };
+                function ButtonMinusReponsive1() {
+                    document.getElementById('minus').style.backgroundColor = "green";
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 - number2)
+                }
+                function ButtonMinusReponsive2() {
+                    document.getElementById('minus').style.backgroundColor = "buttonface";
+            //        document.getElementById('result').innerHTML = ""
+                }
+
+                // multiplying button
+                document.getElementById('multiple').onmouseover = function () { ButtonMultipleReponsive1() };
+                document.getElementById('multiple').onmouseout = function () { ButtonMultipleReponsive2() };
+                function ButtonMultipleReponsive1() {
+                    document.getElementById('multiple').style.backgroundColor = "green";
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 * number2)
+                }
+                function ButtonMultipleReponsive2() {
+                    document.getElementById('multiple').style.backgroundColor = "buttonface";
+            //        document.getElementById('result').innerHTML = ""
+                }
+
+                // dividing button
+                document.getElementById('divide').onmouseover = function () { ButtonDivideReponsive1() };
+                document.getElementById('divide').onmouseout = function () { ButtonDivideReponsive2() };
+                function ButtonDivideReponsive1() {
+                    document.getElementById('divide').style.backgroundColor = "green";
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 / number2)
+                }
+                function ButtonDivideReponsive2() {
+                    document.getElementById('divide').style.backgroundColor = "buttonface";
+            //        document.getElementById('result').innerHTML = ""
+                }
+
+                function RandomFunc() {
+                    document.getElementById('num1').value = Math.random()*10;
+                    document.getElementById('num2').value = Math.random()*10;
+                }
+                
+                function EXP() {
+                    const number1 = parseFloat(document.getElementById('num1').value)
+                    const number2 = parseFloat(document.getElementById('num2').value)
+                    document.getElementById('result').innerHTML = (number1 ** number2)
+                }
+            </script>
+        </div>
+        <div class="grid-item6"></div>
+        <div class="grid-item7"></div>
+        <div class="grid-item8"></div>
+        <div class="grid-item9"></div>
+
+    </div>
+</body>
+
+</html>
