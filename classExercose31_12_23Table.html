@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>class ex 31/12/23 Table Edit</title>
+</head>
+
+<body>
+    <h2>Enter your details</h2>
+    <p>ID<input id="idd" type="number" autofocus>&nbsp;&nbsp;NAME<input id="namee" type="text"></p>
+    <p>MAIL<input id="maill" type="mail">&nbsp;&nbsp;COUNRTY<input id="countryy" type="text"></p>
+    <p>BIRTHDAY<input id="birthdayy" type="date"></p>
+    <table id="user_details" border="1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>MAIL</th>
+            <th>COUNTRY</th>
+            <th>BIRTHDAY</th>
+            <th>FLAG</th>
+        </tr>
+    </table>
+    <br>
+    <button id="addDET" onclick="add_details_from_input_to_the_row()">ADD</button>
+
+    <script>
+        //1
+        //the definitions work only in the beginning once!!!! defining values for use for other functions?????????????????????????????????
+        //    const id = document.getElementById('idd')
+        //    const Nname = document.getElementById('namee')
+        //    const mail = document.getElementById('maill')
+        //    const country = document.getElementById('countryy')
+        //    const birthday = document.getElementById('birthdayy')
+        //    const tableDetails = document.getElementById('user_details')
+
+
+        // because the functions have to work after the page loadin finished, we use 'window.onload' + leave memory cells + define variables in afterload function
+        //let defined before/outside the function because let "stays" inside the function
+        let id, Nname, mail, country, birthday, tableDetails
+
+        window.onload = afterLoad()
+
+        function afterLoad() {
+            id = document.getElementById('idd')
+            Nname = document.getElementById('namee')
+            mail = document.getElementById('maill')
+            country = document.getElementById('countryy')
+            birthday = document.getElementById('birthdayy')
+
+            tableDetails = document.getElementById('user_details')
+
+        }
+
+        //4
+        function clear_cells() {
+            id.value = ''
+            Nname.value = ''
+            mail.value = ''
+            country.value = ''
+            birthday.value = ''
+            id.focus()
+        }
+
+
+        //3
+        //function for adding the row - is it makes sence the order of functions in the code?
+        function add_Row(idv, namev, mailv, birthdayv, countryv) {
+            const new_row = tableDetails.insertRow(-1)
+            const cell_id = new_row.insertCell(0)
+            const cell_name = new_row.insertCell(1)
+            const cell_mail = new_row.insertCell(2)
+            const cell_country = new_row.insertCell(3)
+            const cell_birthday = new_row.insertCell(4)
+            const cell_flag = new_row.insertCell(5)
+
+            cell_id.innerHTML = idv
+            cell_name.innerHTML = namev
+            cell_mail.innerHTML = mailv
+            cell_country.innerHTML = countryv
+            cell_birthday.innerHTML = birthdayv
+            switch (countryv.toUpperCase()) {
+                case 'ISRAEL':
+                    cell_flag.innerHTML = '<img src="/pictures/IsraelFlag.jpg" style="height: 20px">'
+                    break;
+                case 'GERMANY':
+                    cell_flag.innerHTML = '<img src="/pictures/GermanyFlag.jpg" style="height: 20px">'
+                    break;
+            }
+
+            clear_cells()
+        }
+
+        //2
+        function add_details_from_input_to_the_row() {
+            const idv = id.value
+            const namev = Nname.value
+            const mailv = mail.value
+            const countryv = country.value
+            const birthdayv = birthday.value
+            //  alert([idv, namev, mailv, countryv])         - it works!
+            add_Row(idv, namev, mailv, countryv, birthdayv)
+        }
+    </script>
+</body>
+
+</html>
